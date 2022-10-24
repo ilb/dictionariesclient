@@ -1,5 +1,10 @@
 # Dictionaries client
 
+## Установка
+```
+npm i @ilb/dictionariesclient
+```
+
 ## Использование
 
 ### Инициализация клиента:
