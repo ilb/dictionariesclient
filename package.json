@@ -1,0 +1,30 @@
+{
+  "name": "@ilb/dictionariesclient",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "TEST=true node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilb/dictionariesclient.git"
+  },
+  "author": "ssortia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilb/dictionariesclient/issues"
+  },
+  "homepage": "https://github.com/ilb/dictionariesclient#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.4.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0"
+  }
+}
