@@ -2,6 +2,10 @@ import fetch from 'isomorphic-fetch';
 
 export default class DictionariesClient {
 
+  constructor({ dictionariesUrl }) {
+    this.dictionariesUrl = dictionariesUrl;
+  }
+
   async getCountries(filters = {}) {
     const queryParams = this.makeQueryParams({ ...filters, parentCode: 'COUNTRY' });
 
@@ -25,7 +29,7 @@ export default class DictionariesClient {
   }
 
   async getData(queryParams) {
-    const response = await fetch(`https://broker.avclick.ru/dictionaries/api/dictionaries?${queryParams}`, {
+    const response = await fetch(`${this.dictionariesUrl}/api/dictionaries?${queryParams}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
