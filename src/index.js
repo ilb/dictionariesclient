@@ -1,1 +1,1 @@
-export { default as DictionariesClient } from './DictionariesClient';
+export { default as DictionariesClient } from './DictionariesClient.js';
